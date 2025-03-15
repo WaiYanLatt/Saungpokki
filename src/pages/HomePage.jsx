@@ -2,7 +2,7 @@ import AboutSection from "../components/AboutSection";
 import HomeSection from "../components/HomeSection";
 import ProductSetion from "../components/ProductSection";
 import Testmonial from "../components/Testmonial";
-import Fea from "../components/fea";
+import Fea from "../components/Fea";
 import DownloadApp from "../components/DownloadApp";
 
 export default function HomePage() {

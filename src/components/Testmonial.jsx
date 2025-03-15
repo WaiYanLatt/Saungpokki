@@ -64,6 +64,7 @@ export default function Testmonial() {
           centeredSlides={true} // Centers the active slide
           //spaceBetween={0} // Gap between slides
           slidesPerView={1} // Default for mobile
+          autoplay = {true}
           breakpoints={{
             640: {
               slidesPerView: 2, // Show 2 slides on screens >= 640px
