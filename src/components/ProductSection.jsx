@@ -6,8 +6,8 @@ export default function ProductSetion() {
       id: 1,
       name: "Easy-to-learn",
       dis: "Everyone can learn languages from anywhere with internet access.",
-      urlImg: "src/assets/img/smile.png",
-      arrow: "src/assets/img/down-arrow.png",
+      urlImg: "./src/assets/img/smile.png",
+      arrow: ".src/assets/img/down-arrow.png",
       color: "#ffefdd",
     },
     {
