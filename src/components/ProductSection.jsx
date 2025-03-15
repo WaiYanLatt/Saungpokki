@@ -7,49 +7,67 @@ export default function ProductSetion() {
       name: "Easy-to-learn",
       dis: "Everyone can learn languages from anywhere with internet access.",
       urlImg: "./src/assets/img/smile.png",
-      arrow: ".src/assets/img/down-arrow.png",
+      arrow: "./src/assets/img/down-arrow.png",
       color: "#ffefdd",
     },
     {
       id: 2,
       name: "Qualified Teachers",
       dis: "Courses will be taught by well-trained local and expat teachers.",
-      urlImg: "src/assets/img/teacher.png",
-      arrow: "src/assets/img/down-arrow.png",
+      urlImg: "./src/assets/img/teacher.png",
+      arrow: "./src/assets/img/down-arrow.png",
       color: "#fce9fb",
     },
     {
       id: 3,
       name: "User-Friendly Interface",
       dis: "Our platform has a user-friendly interface, making navigation and course enrollment simple for all users.",
-      urlImg: "src/assets/img/user.png",
-      arrow: "src/assets/img/down-arrow.png",
+      urlImg: "./src/assets/img/user.png",
+      arrow: "./src/assets/img/down-arrow.png",
       color: "#e9fdf5",
     },
     {
       id: 4,
       name: "Qualified Teachers",
       dis: "Courses will be taught by well-trained local and expat teachers.",
-      urlImg: "src/assets/img/usergp.png",
-      arrow: "src/assets/img/down-arrow.png",
+      urlImg: "./src/assets/img/usergp.png",
+      arrow: "./src/assets/img/down-arrow.png",
       color: "#e9fdf5",
     },
     {
       id: 5,
       name: "Qualified Teachers",
       dis: "Courses will be taught by well-trained local and expat teachers.",
-      urlImg: "src/assets/img/uro.png",
-      arrow: "src/assets/img/down-arrow.png",
+      urlImg: "./src/assets/img/uro.png",
+      arrow: "./src/assets/img/down-arrow.png",
       color: "#dcdcdc",
     },
     {
       id: 6,
       name: "Relevant Time",
       dis: "Registered learners can learn language at their convenient time slots.",
-      urlImg: "src/assets/img/clock.png",
-      arrow: "src/assets/img/down-arrow.png",
+      urlImg: "./src/assets/img/clock.png",
+      arrow: "./src/assets/img/down-arrow.png",
       color: "#ffefdd",
     },
+  ]);
+
+  const [pdfs , setPdfs] = useState([
+     {
+        id : 1,
+        dis : 'Learn More',
+        url : './src/assets/img/PDF-2.webp',
+     },
+     {
+        id : 2,
+        dis : 'Learn More',
+        url : './src/assets/img/PDF-2.webp',
+     },
+     {
+        id : 3,
+        dis : 'Learn More',
+        url : './src/assets/img/PDF-2.webp',
+     }
   ]);
 
   return (
@@ -72,12 +90,12 @@ export default function ProductSetion() {
           </button>
         </div>
         <div>
-          <img src="src/assets/img/mainproduct1.webp" alt="" />
+          <img src="./src/assets/img/mainproduct1.webp" alt="" />
         </div>
       </div>
       <div className="flex justify-between items-center my-32">
         <div>
-          <img src="src/assets/img/plc.webp" alt="" />
+          <img src="./src/assets/img/plc.webp" alt="" />
         </div>
         <div className="w-[500px]">
           <h1 className="font-semibold text-4xl">PLC</h1>
@@ -105,7 +123,7 @@ export default function ProductSetion() {
           </button>
         </div>
         <div>
-          <img src="src/assets/img/quicklearn.webp" alt="" />
+          <img src="./src/assets/img/quicklearn.webp" alt="" />
         </div>
       </div>
       <div className="bg-blue-500 w-full min-h-[300px] my-72 rounded-3xl p-20 relative">
@@ -119,12 +137,12 @@ export default function ProductSetion() {
           Go to Sora
         </button>
         <img
-          src="src/assets/img/Sora.webp"
+          src="./src/assets/img/Sora.webp"
           className="absolute top-[-4rem] right-[21rem]"
           alt=""
         />
         <img
-          src="src/assets/img/sora-mock.webp"
+          src="./src/assets/img/sora-mock.webp"
           className="absolute top-[-8rem] right-[3rem]"
           alt=""
         />
@@ -134,15 +152,15 @@ export default function ProductSetion() {
           Why Choose Saungpokki?
         </h1>
       </div>
-      <div className="grid grid-cols-2 mt-16 mb-20 gap-10 px-20">
+      <div className="grid grid-cols-2 mt-16 mb-20 gap-10">
         {cards.map((card) => (
           <div
             key={card.id}
             style={{ backgroundColor: card.color }}
-            className="w-full h-36 rounded-3xl shadow-sm px-3 pt-3 relative"
+            className="w-full h-32 rounded-3xl shadow-sm px-3 pt-3 relative"
           >
             <div className="flex items-center">
-              <img src={card.urlImg} alt="" className="w-[90px]" />
+              <img src={card.urlImg} alt="" className="w-[75px]" />
               <div className="ms-[30px]">
                 <h1 className="text-xl font-semibold">{card.name}</h1>
                 <p className="mt-2 font-semibold text-gray-500">{card.dis}</p>
@@ -155,6 +173,21 @@ export default function ProductSetion() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="my-32 flex items-center justify-between">
+         <div className="w-52">
+            <h1 className="text-5xl font-semibold">Saungpokki User Guides _</h1>
+         </div>
+         <div className="flex items-center">
+             {pdfs.map((pdf) => (
+                <div key={pdf.id} className="flex items-center ml-5">
+                    <div className="">
+                        <img src={pdf.url} alt="" />
+                        <h1 className="mt-3 text-blue-500 underline font-semibold">{pdf.dis}</h1>
+                    </div>
+                </div>
+             ))}
+         </div>
       </div>
     </div>
   );
