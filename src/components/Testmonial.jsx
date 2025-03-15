@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; 
 import "swiper/css"; // Basic Swiper styles
 // import "swiper/css/pagination"; // For pagination
 // import "swiper/css/navigation"; // For navigation
@@ -60,11 +61,15 @@ export default function Testmonial() {
           // modules={[Navigation, Pagination]}
           //   navigation
           //   pagination={{ clickable: true }}
+          modules={[Autoplay]}
           loop={true} // Enables infinite scrolling
           centeredSlides={true} // Centers the active slide
           //spaceBetween={0} // Gap between slides
           slidesPerView={1} // Default for mobile
-          autoplay = {true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             640: {
               slidesPerView: 2, // Show 2 slides on screens >= 640px
