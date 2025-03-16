@@ -41,14 +41,14 @@ export default function Card({
         <div onClick={toggleheartActive} className="absolute right-3">
           {heartActive === false && (
             <img
-              src="./src/assets/img/heart.png"
+              src="/src/assets/img/heart.png"
               className="w-7 cursor-pointer"
               alt=""
             />
           )}
           {heartActive === true && (
             <img
-              src="./src/assets/img/heart1.png"
+              src="/src/assets/img/heart1.png"
               className="w-7 cursor-pointer"
               alt=""
             />
@@ -72,7 +72,7 @@ export default function Card({
             <div>
               <h1 className="mt-3 flex items-center font-semibold text-slate-700">
                 <img
-                  src="./src/assets/img/user1.png"
+                  src="/src/assets/img/user1.png"
                   alt=""
                   className="w-7 mr-3"
                 />
@@ -80,7 +80,7 @@ export default function Card({
               </h1>
               <h1 className="mt-1 flex items-center font-semibold text-slate-700">
                 <img
-                  src="./src/assets/img/book1.png"
+                  src="/src/assets/img/book1.png"
                   alt=""
                   className="w-7 mr-3"
                 />
@@ -88,7 +88,7 @@ export default function Card({
               </h1>
               <h1 className="mt-1 flex items-center font-semibold text-slate-700">
                 <img
-                  src="./src/assets/img/calender.png"
+                  src="/src/assets/img/calender.png"
                   alt=""
                   className="w-7 mr-3"
                 />

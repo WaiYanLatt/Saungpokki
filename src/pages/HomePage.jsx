@@ -4,6 +4,7 @@ import ProductSetion from "../components/ProductSection";
 import Testmonial from "../components/Testmonial";
 import Fea from "../components/Fea";
 import DownloadApp from "../components/DownloadApp";
+import Footer from "../components/Footer"
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
           <Fea/>
           <Testmonial/>
           <DownloadApp/>
+          <Footer/>
        </div>
   );
 }

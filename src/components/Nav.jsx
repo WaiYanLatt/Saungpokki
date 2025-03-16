@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   const [Openlag, setOpenlag] = useState("false");
@@ -13,8 +12,26 @@ export default function Nav() {
     <div className="w-full px-32 flex justify-between py-3 bg-glass border-b border-sky-500 z-[100] fixed top-0">
       <img src="/src/assets/img/images.png" className="w-26" alt="" />
       <div className="flex justify-center items-center *:px-5 *:font-semibold *:uppercase *:cursor-pointer *:text-sm">
-        <Link to="/" className="hover:text-blue-500 duration-500">Home</Link>
-        <Link to="/product" className="hover:text-blue-500 duration-500">Product</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `hover:text-blue-500 duration-500 ${
+              isActive ? "text-blue-500 font-bold underline" : ""
+            }`
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/product"
+          className={({ isActive }) =>
+            `hover:text-blue-500 duration-500 ${
+              isActive ? "text-blue-500 font-bold underline" : ""
+            }`
+          }
+        >
+          Product
+        </NavLink>
         <p className="hover:text-blue-500 duration-500">Level Check</p>
         <p className="hover:text-blue-500 duration-500">Faq</p>
         <p className="hover:text-blue-500 duration-500">News</p>
