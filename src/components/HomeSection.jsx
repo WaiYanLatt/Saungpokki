@@ -17,7 +17,7 @@ export default function HomeSection() {
             <button className="border ml-5 py-3 px-5 rounded-full hover:bg-slate-300 duration-500">
               <div className="flex items-center">
                 <img
-                  src="/src/assets/img/video-file.svg"
+                  src="src/assets/img/video-file.svg"
                   alt=""
                   className="w-5 mr-3"
                 />
